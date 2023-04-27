@@ -40,11 +40,13 @@ class CampaignsRelationManager extends RelationManager
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('date'),
-                Tables\Columns\TextColumn::make('name'),
+                Tables\Columns\TextColumn::make('date')->searchable(),
+                Tables\Columns\TextColumn::make('name')->searchable(),
                 Tables\Columns\TextColumn::make('amount')
+                    ->searchable()
                     ->formatStateUsing(fn (string $state): string => "Rp. " . number_format($state, 0, ',', '.')),
-                Tables\Columns\TextColumn::make('transfer_via'),
+                Tables\Columns\TextColumn::make('transfer_via')
+                    ->searchable(),
             ])
             ->filters([
                 //

@@ -15,7 +15,18 @@ class CampaignController extends Controller
      */
     public function index()
     {
-        //
+        $campaign = Campaign::orderBy('created_at', 'desc')
+            ->withSum('donations', 'amount')
+            ->first();
+        $persentage = 0;
+        if ($campaign) {
+            $campaign->donations_sum_amount = (int) $campaign->donations_sum_amount;
+            $persentage = $campaign->donations_sum_amount / $campaign->target_amount * 100;
+        }
+        $campaign->persentage = $persentage;
+        return [
+            'campaign' => $campaign
+        ];
     }
 
     /**
