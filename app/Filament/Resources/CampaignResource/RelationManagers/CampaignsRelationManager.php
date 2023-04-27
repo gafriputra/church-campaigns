@@ -42,7 +42,8 @@ class CampaignsRelationManager extends RelationManager
             ->columns([
                 Tables\Columns\TextColumn::make('date'),
                 Tables\Columns\TextColumn::make('name'),
-                Tables\Columns\TextColumn::make('amount')->money('idr', true),
+                Tables\Columns\TextColumn::make('amount')
+                    ->formatStateUsing(fn (string $state): string => "Rp. " . number_format($state, 0, ',', '.')),
                 Tables\Columns\TextColumn::make('transfer_via'),
             ])
             ->filters([

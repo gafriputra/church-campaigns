@@ -45,7 +45,8 @@ class CampaignResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('title'),
-                Tables\Columns\TextColumn::make('target_amount')->money('idr', true),
+                Tables\Columns\TextColumn::make('target_amount')
+                    ->formatStateUsing(fn (string $state): string => "Rp. " . number_format($state, 0, ',', '.')),
             ])
             ->filters([
                 //
