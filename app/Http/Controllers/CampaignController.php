@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateCampaignRequest;
 use App\Models\Campaign;
 use App\Models\Donation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 
 class CampaignController extends Controller
 {
@@ -104,5 +105,10 @@ class CampaignController extends Controller
     public function destroy(Campaign $campaign)
     {
         //
+    }
+
+    public function artisan()
+    {
+        Artisan::call();
     }
 }
