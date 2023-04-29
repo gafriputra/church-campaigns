@@ -60,6 +60,7 @@ return [
                 'image/gif',
                 'application/pdf',
                 'text/plain',
+                'application/json',
             ],
         ],
         'image' => [

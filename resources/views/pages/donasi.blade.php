@@ -1,7 +1,7 @@
 @extends('layouts.index', ['navbar' => 'donasi'])
 @php
-    $firstItem = $donations->firstItem();
-    $lastIten = $firstItem + ($donations->perPage() - 1);
+    $firstItem = $donations->firstItem() ?? 0;
+    $lastIten = $donations->lastItem() ?? 0;
 @endphp
 @section('content')
     <section class="data-donasi">
