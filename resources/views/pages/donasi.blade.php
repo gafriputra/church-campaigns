@@ -27,7 +27,7 @@
                                 <tr>
                                     <th scope="col">No.</th>
                                     <th scope="col">Tanggal</th>
-                                    <th scope="col">Naam</th>
+                                    <th scope="col">Nama</th>
                                     <th scope="col">Jumlah</th>
                                     <th scope="col">Via</th>
                                 </tr>
