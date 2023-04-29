@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCampaignRequest;
 use App\Http\Requests\UpdateCampaignRequest;
 use App\Models\Campaign;
+use App\Models\Donation;
+use Illuminate\Http\Request;
 
 class CampaignController extends Controller
 {
@@ -24,9 +26,18 @@ class CampaignController extends Controller
             $persentage = $campaign->donations_sum_amount / $campaign->target_amount * 100;
         }
         $campaign->persentage = $persentage;
-        return [
-            'campaign' => $campaign
-        ];
+        return view('pages.home', compact('campaign'));
+    }
+
+    public function donasi(Request $request)
+    {
+        $donations = Donation::orderBy('date', 'desc');
+        $search = $request->input('search');
+        if ($search) {
+            $donations->where('name', 'ilike', "%$search%");
+        }
+        $donations = $donations->paginate();
+        return view('pages.donasi', compact('donations'));
     }
 
     /**

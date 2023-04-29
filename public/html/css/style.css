@@ -1,0 +1,453 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #363231;
+}
+/* set font weight bold for heading tag */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+.home-header {
+  background-image: url(../img/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* ============= navbar style =============== */
+.navbar {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(54, 50, 49, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.home-header .navbar {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-brand img {
+  max-width: 110px;
+}
+
+.navbar-brand img:first-child {
+  display: none;
+}
+
+.home-header .navbar-brand img:last-child {
+  display: none;
+}
+
+.home-header .navbar-brand img:first-child {
+  display: block;
+}
+
+.navbar-collapse {
+  text-align: right;
+}
+
+.navbar .nav-link {
+  color: #363231;
+  text-transform: uppercase;
+}
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+.home-header .navbar .nav-link {
+  color: #363231;
+}
+
+.navbar .nav-link,
+.contact-us {
+  font-weight: 600;
+}
+
+.home-header .donasi-btn {
+  border-color: transparent;
+}
+
+.home-header .donasi-btn:hover {
+  background-color: #fff;
+  color: #363231;
+}
+.donasi-btn {
+  background-color: #363231;
+  color: #fff;
+  border-color: #363231;
+}
+
+.donasi-btn:hover {
+  background-color: #fff;
+  color: #363231;
+  border-color: #363231;
+}
+/* =========== banner-section =========== */
+.banner-section {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.banner-section .right {
+  margin-top: 30px;
+}
+
+/* Progress bar */
+.progress-tooltip {
+  position: relative;
+  padding-top: 50px;
+}
+
+.progress-tooltip .progress-tooltip-info {
+  align-items: center;
+  background: #363231;
+  color: #c6ac8e;
+  display: inline-flex;
+  justify-content: center;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  text-align: center;
+  transform: translateX(calc(-50% - 5px));
+  width: 55px;
+}
+
+.progress-tooltip .progress-tooltip-info::before,
+.progress-tooltip .progress-tooltip-info::after {
+  content: "";
+  display: inline-block;
+  border: 7px solid transparent;
+  border-top-color: #363231;
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.progress-tooltip .progress-tooltip-info::after {
+  z-index: 1;
+}
+
+.progress {
+  height: 4px;
+  background-color: #988066;
+  border-radius: 0;
+  overflow: inherit;
+}
+
+.progress-bar {
+  background-color: #363231;
+  height: 14px;
+  margin-top: -5px;
+}
+
+.progress-value {
+  padding-top: 20px;
+}
+
+.progress-value .bolder-text {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.progress-value div {
+  font-weight: 700;
+}
+
+/* =========== about-section =========== */
+
+.about-section {
+  padding: 70px 1rem;
+}
+
+.about-section .pre-title {
+  margin-bottom: 10px;
+}
+
+.about-section h2 {
+  margin-bottom: 15px;
+}
+
+.video-div {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.video-div svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  fill: #fff;
+  transform: translate(-50%, -50%);
+}
+
+/* =========== Footer =========== */
+
+footer {
+  color: #c6ac8e;
+  background-color: #363231;
+
+  padding: 50px 1rem;
+}
+
+footer .left {
+  line-height: 1.2;
+  margin-bottom: 30px;
+  max-width: 460px;
+}
+
+.contact-info * {
+  margin-bottom: 3px;
+}
+
+.contact-info h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-us {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =========== data-donasi =========== */
+
+.data-donasi {
+  padding: 3rem 1rem;
+}
+
+.data-donasi .search {
+  margin-bottom: 25px;
+}
+
+.data-donasi .search span {
+  font-weight: 600;
+}
+
+.data-donasi .search input {
+  border: 1px solid #686564;
+  border-radius: 5px;
+  height: 38px;
+  padding: 10px;
+}
+
+.data-donasi h1 {
+  margin-bottom: 20px;
+}
+
+.data-donasi table {
+  text-align: center;
+  font-weight: 500;
+}
+
+.data-donasi table tr td:first-child {
+  width: 73px;
+}
+
+.data-donasi table tr th {
+  color: #c6ac8e;
+  font-size: 18px;
+}
+
+.table-bordered > :not(caption) > * > * {
+  border-width: 2px;
+}
+
+.showing-entities {
+  font-weight: 600;
+}
+
+.page-link {
+  border: 0;
+  padding: 0.2rem 0.8rem;
+  font-weight: 600;
+  color: #363231;
+}
+.page-link:focus {
+  box-shadow: none;
+}
+.active > .page-link,
+.page-link.active {
+  background-color: #363231;
+}
+
+.disabled > .page-link,
+.page-link.disabled {
+  color: #c6ac8e;
+
+  background-color: transparent;
+}
+/* =========== media query for mobile only =========== */
+@media (max-width: 767.98px) {
+  .pagination {
+    margin-left: -10px;
+  }
+}
+/* =========== media query for tablet =========== */
+@media (min-width: 992px) {
+  .home-header .donasi-btn {
+    background-color: #fff;
+    color: #363231;
+  }
+
+  .home-header .donasi-btn:hover {
+    background-color: #363231;
+    color: #fff;
+  }
+
+  .contact-us {
+    color: #363231;
+    line-height: 1;
+  }
+
+  .home-header .contact-us {
+    color: #fff;
+  }
+
+  .home-header .contact-us svg {
+    fill: #fff;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0 10px;
+  }
+
+  .home-header .navbar .nav-link {
+    color: #fff;
+  }
+
+  .navbar-nav {
+    margin-right: 15px;
+  }
+}
+/* =========== media query for desktop only =========== */
+@media (min-width: 1200px) {
+  .navbar {
+    padding-top: 3rem;
+  }
+
+  .banner-section {
+    padding-top: 18rem;
+  }
+
+  .about-section,
+  footer {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .data-donasi table tr td:nth-of-type(3) {
+    width: 280px;
+  }
+
+  .data-donasi .search span {
+    font-size: 18px;
+  }
+
+  .data-donasi .search input {
+    height: 42px;
+  }
+
+  .showing-entities {
+    font-size: 18px;
+  }
+
+  .page-link {
+    padding: 0.3rem 0.9rem;
+
+    font-size: 18px;
+  }
+
+  .data-donasi table {
+    margin-bottom: 30px;
+  }
+}
+/* =========== media query for large desktop only =========== */
+@media (min-width: 1400px) {
+  .navbar .nav-link {
+    font-size: 18px;
+  }
+
+  .contact-us {
+    font-size: 17px;
+  }
+
+  .donasi-btn {
+    font-size: 19px;
+  }
+
+  .navbar-brand img {
+    max-width: 130px;
+  }
+
+  .banner-section h1 {
+    font-size: 57px;
+    line-height: 1.1;
+    margin-bottom: -8px;
+  }
+
+  .banner-section {
+    padding-top: 24rem;
+    padding-bottom: 5rem;
+  }
+
+  .banner-section .right {
+    padding-left: 2rem;
+  }
+
+  .progress-value div {
+    font-size: 17px;
+  }
+
+  .progress-value .bolder-text {
+    font-size: 32px;
+  }
+
+  .about-section .pre-title {
+    margin-bottom: 15px;
+  }
+
+  .about-section h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+
+  .about-section p {
+    margin-bottom: 25px;
+  }
+
+  .about-section {
+    font-size: 18px;
+  }
+
+  .video-div {
+    padding-right: 1rem;
+  }
+
+  .about-section {
+    padding-top: 155px;
+    padding-bottom: 155px;
+  }
+
+  footer {
+    padding: 80px 7rem;
+    font-size: 19px;
+  }
+
+  .contact-info h4 {
+    font-size: 19px;
+  }
+}
