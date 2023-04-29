@@ -21,9 +21,9 @@
                         </div>
                         <div class="text-center progress-value">
                             <div class="bolder-text">
-                                {{ 'Rp. ' . number_format($campaign->donations_sum_amount, 0, ',', '.') }}</div>
+                                {{ 'Rp ' . number_format($campaign->donations_sum_amount, 0, ',', '.') }}</div>
                             <div>Terkumpul dari
-                                <strong>{{ 'Rp. ' . number_format($campaign->target_amount, 0, ',', '.') }}</strong></div>
+                                <strong>{{ 'Rp ' . number_format($campaign->target_amount, 0, ',', '.') }}</strong></div>
                         </div>
                     </div>
                 </div>

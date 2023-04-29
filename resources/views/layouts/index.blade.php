@@ -17,12 +17,8 @@
 </head>
 
 <body>
-    <div class="home-header">
-        @if ($navbar == 'home')
-            @include('components.navbar-home')
-        @else
-            @include('components.navbar')
-        @endif
+    <div class="@if ($navbar == 'home') home-header @endif">
+        @include('components.navbar')
         @yield('jumbotron')
     </div>
     @yield('content')
