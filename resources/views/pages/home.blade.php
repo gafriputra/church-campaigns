@@ -7,7 +7,7 @@
                     <h1>{{ $campaign->title }}</h1>
                 </div>
                 @php
-                    $persentageConvert = $campaign->persentage > 100 ? 100 : $campaign->persentage;
+                    $persentageConvert = $campaign->persentage > 100 ? 100 : round($campaign->persentage, 2);
                 @endphp
                 <div class="col-md-5">
                     <div class="right">
