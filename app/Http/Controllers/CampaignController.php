@@ -36,6 +36,7 @@ class CampaignController extends Controller
         $search = $request->input('search');
         if ($search) {
             $donations->where('name', 'ilike', "%$search%");
+            $donations->Orwhere('transfer_via', 'ilike', "%$search%");
         }
         $donations = $donations->paginate();
         return view('pages.donasi', compact('donations'));
@@ -107,8 +108,8 @@ class CampaignController extends Controller
         //
     }
 
-    public function artisan()
+    public function refresh()
     {
-        Artisan::call();
+        Artisan::call("optimize");
     }
 }

@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [CampaignController::class, 'index'])->name('home');
 Route::get('/donasi', [CampaignController::class, 'donasi'])->name('donasi');
-Route::get('/artisan', [CampaignController::class, 'artisan'])->name('artisan');
+Route::get('/refresh', [CampaignController::class, 'refresh'])->name('refresh');

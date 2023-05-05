@@ -1,0 +1,27 @@
+{
+    "components": {
+        "navbar": {
+            "menu": {
+                "contact_us": {
+                    "wa_number": "+62 831-4448-4092",
+                    "wa_link": "https://wa.me/6283144484092"
+                },
+                "donasi_sekarang": "https://docs.google.com/forms/u/0/?tgif=d"
+            }
+        }
+    },
+    "pages": {
+        "home": {
+            "khotbah": {
+                "thumbnail": "/html/img/video-poster.jpg",
+                "youtube": "http://www.youtube.com/watch?v=0O2aH4XLbto",
+                "title": "Add a Catchy Title Here",
+                "sub_title": "Your Pre-title goes here",
+                "messages": [
+                    "This space gives you more room to expound on your message. Remember that writing effectively is an art. Start by using simple, everyday words people can easily understand. Be clear and direct to the point. Keep your thoughts flowing logically, and aim for brevity.",
+                    "Your ideas have a purpose, so choose words that accurately express them. Ensure your grammar is flawless as it impacts your credibility. Use the active voice whenever possible as it makes any narrative easier to read."
+                ]
+            }
+        }
+    }
+}
