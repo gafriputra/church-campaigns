@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [CampaignController::class, 'index'])->name('home');
 Route::get('/donasi', [CampaignController::class, 'donasi'])->name('donasi');
 Route::get('/refresh', [CampaignController::class, 'refresh'])->name('refresh');
+Route::get('/login', function (){
+    return redirect('/admin/login');
+})->name('login');
